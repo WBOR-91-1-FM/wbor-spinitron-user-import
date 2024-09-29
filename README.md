@@ -7,12 +7,14 @@ A script we use at [WBOR 91.1 FM](https://wbor.org) to automate field entry in t
 * A JavaScript runtime environment. Node.js will be used for this example (`brew install node`).
 * A modern web browser, e.g. Firefox (`brew install --cask firefox`).
 
+(`brew` commands are executed using [Homebrew](https://brew.sh))
+
 ## Usage
 
 * Clone this repository to your machine and navigate to its location via command line.
-* Add the .csv containing your data to the same folder as csv-array.js.
+* Add the `.csv` containing your data to the same folder as `csv-array.js`.
 
-  * The first line (header) should be `email, name, djName`, and each line after should be a DJ entry (such as `john@doe.com, John Doe, DJ John`). The last line of the file should be blank.
+  * The first line of the file (the header) should be `email, name, djName`. Each line after should be a DJ entry (such as `john@doe.com, John Doe, DJ John`). The last line of the file should be left empty.
 
 * Run `node csv-array.js` and copy its output. `csv-array.js` assumes your file is named `data.csv`. If it is not, you have the option to pass the script an argument with the name of the .csv you'd like to use (for example, `node csv-array.js dj_info.csv`).
 * Open `spinitron-autofill.js` in a text editor/IDE of your choice, e.g. VSCode.

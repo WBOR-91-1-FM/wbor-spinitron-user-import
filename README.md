@@ -23,4 +23,5 @@ A script we use at [WBOR 91.1 FM](https://wbor.org) to automate field entry in t
 * Open Spinitron's ["add users" dialogue](https://spinitron.com/m/persona/create) after logging in as an admin.
 * Open your browser's console. In Firefox on macOS, this is done by entering <kbd>CMD</kbd> + <kbd>OPTION</kbd> + <kbd>K</kbd>.
 * Paste the `spinitron-autofill.js` script you copied (ensuring it includes your data[] array) and press enter.
-* Submit! The script doesn't fill in the existing fields but rather creates new ones for each entry at the bottom of the page, effectively allowing it to bypass Spinitron's limit of 10 at a time.
+* Submit! The script doesn't fill in the existing fields (the first 10 - so they will remain empty) but rather creates new ones for each entry at the bottom of the page, effectively allowing it to bypass Spinitron's limit of 10 at a time.
+* If you encounter an issue wherein a DJ has an existing DJ profile, you may either decide to create an additional profile (not recommended) or to remove them from the dataset.
